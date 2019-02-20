@@ -89,7 +89,7 @@ namespace RedisMessagePackFormatter
 
         private static void OutputFormatterInfo()
         {
-            var info = new {version = "1.1.0", description = "MessagePack Formatter"};
+            var info = new {version = "1.2.0", description = "MessagePack Formatter"};
             Console.Write(JsonConvert.SerializeObject(info));
         }
         
