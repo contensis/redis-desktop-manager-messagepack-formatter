@@ -1,0 +1,23 @@
+﻿{
+  "propertyMappings": {
+    "i": "id",
+    "p": "parentId",
+    "c": "childIds",
+    "st": "state",
+    "e": "entryId",
+    "v": "variations",
+    "t": "title",
+    "s": "slug",
+    "n": "name",
+    "d": "defaultLanguage",
+    "r": "restrictedToLanguages",
+    "ri": "rootId",
+    "l": "languages",
+    "m": "matchingLanguages"
+  },
+  "guidFields": [
+    "e", 
+    "i", 
+    "p"
+  ]
+}
