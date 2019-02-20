@@ -14,8 +14,6 @@ namespace RedisMessagePackFormatter
 
         static void Main(string[] args)
         {
-            GetConfig();
-            
             if (args[0] == "info")
             {
                 OutputFormatterInfo();
@@ -24,6 +22,7 @@ namespace RedisMessagePackFormatter
 
             if (args[0] == "decode")
             {
+                GetConfig();
                 DecodeMessagePack();
             }
         }
@@ -95,7 +94,7 @@ namespace RedisMessagePackFormatter
         
         static void GetConfig()
         {
-            var json = File.ReadAllText("property-mappings.json");
+            var json = File.ReadAllText("config.json");
             var config = JsonConvert.DeserializeObject<Config>(json);
             _propertyMappings = config.PropertyMappings;
             _guidFields = config.GuidFields;
